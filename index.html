@@ -21,6 +21,7 @@
         body {
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: center;
             font-family: "Pacifico", serif;
             font-weight: 400;
@@ -117,6 +118,29 @@
         .hidden {
             display: none;
         }
+
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: yellow;
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none; 
+            transition: opacity 0.3s;
+            width: 45px;
+            height: 45px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #0056b3;
+        }
     </style>
     <style type="text/tailwindcss">
         @tailwind base;
@@ -156,7 +180,7 @@
                 <p class="text-sm mt-2 leading-8">Thôn Tử Dương - Cao Thành - Ứng Hoà - Hà Nội</p>
             </div>
             <div class="" data-aos="fade-down-left" data-aos-duration="1000">
-                <img src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505065/257A6942_re2yug.jpg">
+                <img src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg">
             </div>
             <div class="" data-aos="fade-up-right" data-aos-duration="1000">
                 <img src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505075/257A6958_voyspn.jpg">
@@ -185,7 +209,7 @@
 
 
     <section class="pt-9 max-w-[435px]" data-aos="fade-up" data-aos-duration="1000">
-        <div class="border border-black border-1 mx-6 rounded-xl flex flex-col items-center py-8">
+        <div class="border border-black border-1 px-12 rounded-xl flex flex-col items-center py-8">
             <h6 class="mb-5">NGÀY TỔ CHỨC TIỆC</h6>
             <h6 class="mb-1">THỨ 7 | 15H30</h6>
             <h3 class="text-[32px] font-extrabold">09 . 03 . 2025</h3>
@@ -198,7 +222,7 @@
         <h2 class="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Album Hình Cưới
         </h2>
         <div class="grid grid-cols-2 px-2 gap-4">
-          
+          danh sách hình ảnh album
         </div>
     </section>
 
@@ -231,6 +255,25 @@
             </svg>
         </span>
     </button>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+
+    <script>
+        // Hiển thị nút khi cuộn xuống
+        window.onscroll = function () {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "flex";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Hàm cuộn lên đầu trang
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
 
     <script>
         tsParticles.load("snowfall", {
