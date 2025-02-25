@@ -320,6 +320,24 @@
             }
         });
 
+        window.addEventListener('scroll', () => {
+            if (audio.paused) {
+                audio.play();
+                toggleButton.classList.add("playing");
+                iconMute.classList.add("hidden");
+                iconPlay.classList.remove("hidden");
+            }
+        }, { once: true }); // Chỉ chạy một lần
+
+
+        document.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                toggleButton.classList.add("playing");
+                iconMute.classList.add("hidden");
+                iconPlay.classList.remove("hidden");
+            }
+        }, { once: true });
 
         document.addEventListener('touchstart', () => {
             if (audio.paused) {
