@@ -13,12 +13,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TC</title>
     <style>
-        /* * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        } */
-
         .font-dancing {
             /* font-family: "Dancing Script", serif; */
             font-family: "Pacifico", serif;
@@ -28,9 +22,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            overflow-x: hidden;
             font-family: "Pacifico", serif;
             font-weight: 400;
+            overflow-x: hidden !important;
+        }
+
+        body,
+        html {
+            overflow-x: hidden;
         }
 
         @keyframes zoomEffect {
@@ -118,8 +117,6 @@
         .hidden {
             display: none;
         }
-
-  
     </style>
     <style type="text/tailwindcss">
         @tailwind base;
@@ -132,14 +129,16 @@
 <body>
     <main class="content relative flex items-center justify-center z-[20] max-w-[435px]">
         <div id="snowfall" class="z-[10] absolute top-0 left-0 w-full h-full pointer-events-none"></div>
-        <img
-            src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg">
+        <img src="./images/257A6873.jpg">
         <div class="absolute flex flex-col justify-center items-center text-center gap-6">
-            <h2 data-aos="fade-down" data-aos-duration="1000" class="text-white text-[28px]" style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);">-SAVE THE DATE-</h2>
-            <h2 data-aos="fade" data-aos-duration="1000" class="font-dancing text-white text-[26px] font-medium text-center"
+            <h2 data-aos="fade-down" data-aos-duration="1000" class="text-white text-[28px]"
+                style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);">-SAVE THE DATE-</h2>
+            <h2 data-aos="fade" data-aos-duration="1000"
+                class="font-dancing text-white text-[26px] font-medium text-center"
                 style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);">Phương Nam <br> ♥ <br> Hải Yến </h2>
             <span class="w-[100px] h-[4px] bg-[#d4f622] roud my-5 rounded"></span>
-            <p data-aos="fade-up" data-aos-duration="1000" class="font-dancing font-medium text-white text-[30px] zoom-text"
+            <p data-aos="fade-up" data-aos-duration="1000"
+                class="font-dancing font-medium text-white text-[30px] zoom-text"
                 style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);">09/03/2025</p>
             <p data-aos="fade-up" data-aos-duration="1000" class="font-dancing text-white  text-[16px]"
                 style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);">(Tức Ngày 10 Tháng 02 Năm Ất Tỵ)</p>
@@ -147,22 +146,23 @@
     </main>
 
     <section class="py-6 max-w-[435px]">
-        <h2 class="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Một hành trình mới bắt đầu</h2>
+        <h2 class="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Một hành trình mới
+            bắt đầu</h2>
         <div class="grid grid-cols-2 px-2">
-            <div class=" flex flex-col justify-center items-center text-center" data-aos="fade-down-right" data-aos-duration="1000">
+            <div class=" flex flex-col justify-center items-center text-center" data-aos="fade-down-right"
+                data-aos-duration="1000">
                 <h5 class="font-extrabold text-[15px] leading-8">Nhà Gái <br> Ông Nguyễn Danh Hào <br> Bà Nguyễn Thị
                     Phương</h5>
                 <p class="text-sm mt-2 leading-8">Thôn Tử Dương - Cao Thành - Ứng Hoà - Hà Nội</p>
             </div>
             <div class="" data-aos="fade-down-left" data-aos-duration="1000">
-                <img
-                    src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg">
+                <img src="./images/257A6945.jpg">
             </div>
             <div class="" data-aos="fade-up-right" data-aos-duration="1000">
-                <img
-                    src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg">
+                <img src="./images/257A6958.jpg">
             </div>
-            <div class=" flex flex-col justify-center items-center text-center" data-aos="fade-up-left" data-aos-duration="1000">
+            <div class=" flex flex-col justify-center items-center text-center" data-aos="fade-up-left"
+                data-aos-duration="1000">
                 <h5 class="font-extrabold text-[15px] leading-8">Nhà Trai <br> Ông Nguyễn Hữu Cầu <br> Bà Nguyễn Thị Kế
                 </h5>
                 <p class="text-sm mt-2 leading-8">Thôn Đạo tú - Quảng Phú Cầu - Ứng Hoà - Hà Nội</p>
@@ -174,14 +174,11 @@
         <div class="w-[180px] h-[3px] bg-black rounded mx-auto mb-3"></div>
         <h2 class="text-center font-medium text-[26px] mb-4" data-aos="fade" data-aos-duration="1000">Thư Mời</h2>
         <div class="grid grid-cols-[auto_37%_auto] items-center gap-4 px-2 rounded">
-            <img data-aos="fade-left" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="fade-left" data-aos-duration="1000" class="shadow-2xl" src="./images/257A6916.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <img data-aos="fade-top" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="fade-top" data-aos-duration="1000" class="shadow-2xl" src="./images/257A6768.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <img data-aos="fade-right" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="fade-right" data-aos-duration="1000" class="shadow-2xl" src="./images/257A7109.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
         </div>
     </section>
@@ -189,7 +186,7 @@
 
     <section class="pt-9" data-aos="fade-up" data-aos-duration="1000">
         <div class="border border-black border-1 mx-6 rounded-xl flex flex-col items-center py-8">
-            <h6 class="mb-5" >NGÀY TỔ CHỨC TIỆC</h6>
+            <h6 class="mb-5">NGÀY TỔ CHỨC TIỆC</h6>
             <h6 class="mb-1">THỨ 7 | 15H30</h6>
             <h3 class="text-[32px] font-extrabold">09 . 03 . 2025</h3>
             <p class="font-dancing font-medium text-[14px] mt-4">(Tức Ngày 10 Tháng 02 Năm Ất Tỵ)</p>
@@ -198,25 +195,20 @@
     </section>
 
     <section class="py-6 mt-2 max-w-[435px]">
-        <h2 class="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Album Hình Cưới</h2>
+        <h2 class="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Album Hình Cưới
+        </h2>
         <div class="grid grid-cols-2 px-2 gap-4">
-            <img data-aos="fade-right" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="flip-right" data-aos-duration="1000" class="shadow-2xl" src="./images/257A7250.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <img data-aos="fade-left" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="fade-left" data-aos-duration="1000" class="shadow-2xl" src="./images/257A7196.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <img data-aos="fade-right" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="fade-right" data-aos-duration="1000" class="shadow-2xl" src="./images/257A7142.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <img data-aos="fade-left" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="fade-right" data-aos-duration="1000" class="shadow-2xl" src="./images/257A7238.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <img data-aos="fade-right" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="flip-left" data-aos-duration="1000" class="shadow-2xl" src="./images/257A7288.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <img data-aos="fade-left" data-aos-duration="1000" class="shadow-2xl"
-                src="https://cdn.biihappy.com/ziiweb/default/template/643d7a7706109e990f016274/adbe91da36d0b05ceedcfa265607ae76.jpg"
+            <img data-aos="fade-left" data-aos-duration="1000" class="shadow-2xl" src="./images/257A6979.jpg"
                 style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
         </div>
     </section>
