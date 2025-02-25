@@ -320,13 +320,8 @@
             }
         });
 
-        window.addEventListener('scroll', () => {
-            if (audio.paused) {
-                audio.play();
-            }
-        }, { once: true }); // Chỉ chạy một lần
 
-        document.addEventListener('click', () => {
+        document.addEventListener('touchstart', () => {
             if (audio.paused) {
                 audio.play();
                 toggleButton.classList.add("playing");
